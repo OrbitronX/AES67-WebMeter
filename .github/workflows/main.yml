@@ -16,9 +16,4 @@ jobs:
         GOOS=linux GOARCH=amd64 go build -o build/aes67webmeter-linux .
         GOOS=windows GOARCH=amd64 go build -o build/aes67webmeter-windows.exe .
         GOOS=darwin GOARCH=amd64 go build -o build/aes67webmeter-mac .
-    - name: Upload builds
-      uses: actions/upload-artifact@v1
-      with:
-        name: build
-        path: build
 
